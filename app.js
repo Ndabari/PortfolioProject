@@ -19,10 +19,16 @@ function PageTransitions() {
     }
 
     //sections active
+    /*
+    allSections.addEventListener('click', (e) =>{
+        console.log(e.target);
+    })*/
+    
     const allSections = document.querySelectorAll('.section'); // Adjust the selector based on your HTML structure
 
     allSections.forEach((section) => {
         section.addEventListener('click', (e) =>{
+            console.log(e.target);/*
             const id = e.target.dataset.id;
             if(id){
                 //remove selected from other btns
@@ -38,7 +44,7 @@ function PageTransitions() {
     
                 const element = document.getElementById(id);
                 element.classList.add('active');
-            }
+            }*/
         })
     })
 
